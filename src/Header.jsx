@@ -1,9 +1,18 @@
+import { useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import logo from './/images/bookBuzzLogo.png'
-import { Nav } from 'react-bootstrap'
+import Nav from 'react-bootstrap/Nav'
+import Button from 'react-bootstrap/Button'
+import { LoginModal } from './Modal'
 
 export function Header() {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <Navbar className="bg-body-tertiary">
@@ -23,11 +32,14 @@ export function Header() {
               <Nav.Link href="#community">Community</Nav.Link>
               <Nav.Link href="#resources">Resources</Nav.Link>
               <Nav.Link href="#contactUs">Contact Us</Nav.Link>
-
+              <Button variant='warning' onClick={handleShow}>
+                Login
+              </Button>
             </Nav>
-            
         </Container>
       </Navbar>
+
+      <LoginModal show={show} handleClose={handleClose} />
     </>
   )
 }
