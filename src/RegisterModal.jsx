@@ -16,11 +16,13 @@ export const RegisterModal = (props) => {
         <Row className="mb-3">
           <Form.Group as={Col} md="5" controlId="validationCustom01">
             <Form.Label>First name</Form.Label>
+            <Form.Control required type="text" placeholder="John" defaultValue="" />
             <Form.Control required type="text" placeholder="John" defaultValue="First" />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="5" controlId="validationCustom02">
             <Form.Label>Last name</Form.Label>
+            <Form.Control required type="text" placeholder="Smith" defaultValue="" />
             <Form.Control required type="text" placeholder="Smith" defaultValue="Last" />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
