@@ -29,7 +29,7 @@ export function Footer() {
           </Col>
           <Col>
             <h4>Genres <br/></h4>
-            <a href='#fuction' style={linkStyle}>Fiction</a><br/>
+            <a href='#fiction' style={linkStyle}>Fiction</a><br/>
             <a href='#scienceFiction' style={linkStyle}>Science Fiction</a><br/>
             <a href='#Romance' style={linkStyle}>Romance</a><br/>
             <a href='#Memior' style={linkStyle}>Memior & Autobiography</a><br/>
