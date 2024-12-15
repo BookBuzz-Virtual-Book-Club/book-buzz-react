@@ -21,7 +21,7 @@ export function Header() {
   return (
     <>
       <Navbar className="bg-body-tertiary">
-        <Container>
+        <Container fluid>
             <img
               src={logo}
               width="45"
