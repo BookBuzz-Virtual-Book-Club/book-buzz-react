@@ -14,7 +14,7 @@ export function Footer() {
   return(
     <footer>
       <Container fluid>
-        <Row className='bg-warning text-black p-4'>
+        <Row className='text-black p-4'>
           <Col>
             <Stack>
               <Image
